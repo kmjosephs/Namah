@@ -1,0 +1,95 @@
+/*body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+@import url(http://fonts.googleapis.com/css?family=Antic+Slab);
+*/
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,200);
+
+html,body {
+    height:100%;
+}
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size:80px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.lead {
+    color: #ffffff;;
+    font-weight:300;
+    letter-spacing: 1px;
+}
+
+
+/* Custom container */
+.container-full {
+    margin: 0 auto;
+    width: 100%;
+    min-height:100%;
+    background-color:#82b2ed;
+    color:#fff;
+    overflow:hidden;
+}
+
+.container-full a {
+    color:#efefef;
+    text-decoration:none;
+}
+
+.v-center {
+    margin-top:7%;
+}
+
+/* CSS only animated buttons http://codepen.io/annelee/pen/BNzEEE */
+
+input {
+    -webkit-appearance: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.all-buttons {
+    width: 300px;
+    margin: auto;
+}
+
+.button-wrapper {
+    margin: 20px 0;
+    position: relative;
+    display: inline-block;
+}
+
+.button5 {
+    height: 40px;
+    width: 150px;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    color: #fff;
+    transition: 300ms;
+    /*opacity: 0.5;*/
+}
+.button5:hover {
+    color: #fff;
+    background-color: #6c9ddd;
+    opacity: 0.7;
+    font-weight: 300;
+}
+
+/* Create Dictionary Page */
+.jumbotron {
+    background-color: #82b2ed;
+}

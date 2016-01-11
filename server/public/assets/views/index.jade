@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  .container-full
+    .row
+      .navbar
+        ul.nav
+          li.nav-item
+            a(href="#")
+              i.icon-fixed-width.icon-home
+              | Login
+    .row
+      .col-lg-12.text-center.v-center
+        h1 Namah
+        p.lead Community-Created Dictionaries
+        br
+        .all-buttons
+          .button-wrapper
+            a(href="/signup")
+              input.button5(type="button", name="button5", value="Sign Up")
+        br
+        .all-buttons
+          .button-wrapper
+            a(href="/create")
+              input.button5(type="button", name="button5", value="Create")
+        br
+        .all-buttons
+          .button-wrapper
+            a(href="/view")
+              input.button5(type="button", name="button5", value="View")
