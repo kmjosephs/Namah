@@ -3,6 +3,8 @@
 extends layout
 
 block content
-  form#signup
+  form#signup(method="post", action="/user")
     label
-    input
+    input(type="text", name="firstname", placeholder="First Name")
+    input(type="text", name="lastname", placeholder="Last Name")
+    input(type="submit", value="Signup")

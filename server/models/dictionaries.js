@@ -5,9 +5,10 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var DictionarySchema = new Schema({
+    userId:Number,
     dictionaryname: String,
     ethnologuecode: String,
-    lastupdate: type: Date, default: Date.now
+    location: String
 });
 
 module.exports = mongoose.model('Dictionary', DictionarySchema);

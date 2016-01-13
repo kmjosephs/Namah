@@ -1,0 +1,11 @@
+//
+   Created by kmjosephs on 1/13/16.
+
+extends layout
+
+block content
+  form#lemma(method="post", action="/lemmaRoute")
+    input(type="text", name="word", placeholder="Word")
+    input(type="text", name="partOfSpeech", placeholder="Part of Speech")
+    input(type="text", name="definition", placeholder="Definition")
+    input(type="submit", value="Save Word")

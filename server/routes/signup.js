@@ -5,10 +5,17 @@ var express = require('express');
 var router = express.Router();
 var path = require('path');
 
-var mongoose = require('mongoose');
-var User = require("../models/users");
 
-router.get("/", function(req, res){
+router.get('/', function(req, res, next){
+    res.render('signup', {title:'Sign Up!'});
+});
+
+
+module.exports = router;
+
+
+
+/*router.get("/", function(req, res){
     User.find({}, function(err, data){
         if(err){
             console.log("Signup.js, Error: ", err)
@@ -19,19 +26,7 @@ router.get("/", function(req, res){
 
 //TODO router.post, need the names from the form
 
-router.post('/',function(req, res){
-    console.log(req.body.username);
-    var user = new User();
-    user.username = req.body.username;
-
-    user.save(function(err, data){
-        if(err){
-            console.log("Error: ", err);
-        }
-
-        res.send(data);
-    });
-});
 
 
-module.exports = router;
+
+module.exports = router; */

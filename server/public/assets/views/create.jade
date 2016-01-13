@@ -3,6 +3,7 @@ extends layout
 block content
   .jumbotron.jumbo-create
     h1.lead Let's Get Started
-  form.form-create-dictionary
-    input(type="text", placeholder="Language Name")
-    input(type="text", placeholder="Ethnologue Code")
+  form.form-create-dictionary(method='post', action='/dictionaryRoute')
+    input(type="text", name="name", placeholder="Language Name")
+    input(type="text", name="ethcode", placeholder="Ethnologue Code")
+    input(type="submit", value="Create")
