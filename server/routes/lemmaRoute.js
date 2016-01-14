@@ -5,6 +5,15 @@ var express = require('express');
 var router = express.Router();
 var Lemma = require('../models/lemmas');
 
+router.get('/', function(req, res){
+    Lemma.find({}, function(err, data){
+        if(err){
+            console.log("Error: ", err);
+        }
+        res.send(data);
+    });
+});
+
 router.post('/', function(req, res){
     console.log(req.body.word);
     var lemma = new Lemma();
@@ -18,7 +27,7 @@ router.post('/', function(req, res){
         if(err){
             console.log("Error in lemmaRoute.js: ", err);
         }
-        res.send('Success!');
+        res.render('lemma', {title:'Lemmas'});
     });
 
 });

@@ -6,3 +6,6 @@ extends layout
 block content
   h1 Dictionaries
   h2 Here is a list of current dictionaries:
+  .dictionary-list(ng-controller="DictionaryCtrl")
+    .dictionary(ng-repeat="dictionary in dictionaries")
+      {{dictionary.dictionaryname}}

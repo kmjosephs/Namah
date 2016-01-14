@@ -9,3 +9,7 @@ block content
     input(type="text", name="partOfSpeech", placeholder="Part of Speech")
     input(type="text", name="definition", placeholder="Definition")
     input(type="submit", value="Save Word")
+  div.current-lemmas(ng-repeat="lemma in lemmas")
+    {{lemma.word}}
+    {{lemma.partOfSpeech}}
+    {{lemma.definition}}
